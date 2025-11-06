@@ -20,6 +20,7 @@ seet.addEventListener("click", () => {
     welcome.style.color = "white";
     content.appendChild(nuevoh2)
     nuevoh2.textContent = "Buscaste: " + searchinput.value;
+    nuevoh2.style.fontFamily = "Montserrat"
 });
 
 boton.addEventListener("click", () => {
