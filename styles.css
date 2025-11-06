@@ -1,0 +1,369 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf) format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Bold.ttf) format(truetype);
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url(fonts/BarlowCondensed-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Barlow;
+    src: url(fonts/BarlowCondensed-Bold.ttf);
+    font-weight: 800;
+}
+
+body {
+    margin: 0;
+    background-image: url("https://wallpaperaccess.com/full/2562637.jpg");                /* Ocupa toda la pantalla */
+}
+
+.menu {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    margin: 40px 60px;
+    font-family: Montserrat;
+    font-weight: bold;
+    align-items: center;
+    color: white;
+    font-size: 15px;
+}
+
+.navItem {
+    cursor: pointer;
+}
+
+.google {
+    width: 100px;
+    margin: 40px 120px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+}
+
+.sign {
+    background-color: rgb(73, 73, 253);
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+    width: 180px;
+    height: 60px;
+    border-radius: 30px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.burguer {
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.burguermobile {
+  display: none;
+}
+
+.content {
+    padding: 60px 20px;
+    color: white;
+    margin-left: 60px;
+}
+
+h1 {
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 100px;
+    margin-bottom: 40px;
+}
+
+/* From Uiverse.io by naelawadallah */ 
+.search-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  
+}
+
+.search-header__input {
+  font-family: inherit;
+  font-size: 16px;
+  background-color: #0a0a0a;
+  border: solid 0.5px #ffffff;
+  color: #ffffff;
+  padding: 0.7rem 1rem;
+  border-radius: 25px;
+  width: 450px;
+  height: 30px;
+  transition: all ease-in-out 0.5s;
+  margin-right: -2rem;
+  opacity: 1;
+  text-align: center;
+}
+
+.search-header__input:hover,
+.search-header__input:focus {
+  box-shadow: 0 0 1em #00000013;
+}
+
+.search-header__input:focus {
+  outline: none;
+  background-color: #0a0a0aad;
+}
+
+.search-header__input::-webkit-input-placeholder {
+  font-weight: 100;
+  color: #3a3a3a;
+}
+
+.search-header__input:focus + .search-header__button {
+  background-color: transparent;
+}
+
+.search-header__button {
+  border: none;
+  background-color: transparent;
+  margin-top: 0.1em;
+}
+
+.search-header__button:hover {
+  cursor: pointer;
+}
+
+.search-header__icon {
+  height: 1.3em;
+  width: 1.3em;
+  fill: #ffffff;
+}
+
+.buttons {
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+
+}
+
+.free {
+    background-color: rgb(50, 132, 224);
+    color: white;
+    font-family: Barlow;
+    font-weight: 800;
+    border: none;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.see {
+    background-color: transparent;
+    color: gray;
+    font-family: Barlow;
+    font-weight: 400;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 19px;
+    letter-spacing: 2px;
+    cursor: pointer; 
+}
+
+@media (max-width: 1200px) {
+  body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .google {
+    width: 100px;
+    margin: 40px 25px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 3vh;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 120px;
+    margin-left: 37px;
+  }
+
+.burguermobile {
+    margin: 40px 25px;
+    display: block;
+    background: transparent;
+    width: 100px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  width: 550px;
+}
+
+.free {
+  width: 200px;
+  height: 80px;
+  font-size: 25px;
+}
+
+.see {
+  width: 200px;
+  height: 80px;
+  font-size: 25px;
+}
+  .search-header {
+    width: 470px;
+    margin-left: 40px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .google {
+    width: 60px;
+    margin: 40px 25px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding-left: 3vh;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+.burguermobile {
+    margin: 40px 25px;
+    display: block;
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.free {
+  font-size: 15px;
+}
+  .search-header {
+    width: 270px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .google {
+    width: 60px;
+    margin: 20px 15px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+.burguermobile {
+    margin: 20px 15px;
+    display: block;
+    background: transparent;
+    width: 60px;
+    height: 60px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 250px;
+}
+
+.free {
+  font-size: 15px;
+}
+  .search-header {
+    width: 270px;
+  }
+}
+
